@@ -15,6 +15,10 @@
   font-family: "Poppins-Regular";
 }
 
+body {
+  overflow-x: hidden;
+}
+
 button {
   border: none;
   padding: 7px 12px;
@@ -156,6 +160,8 @@ main p {
   justify-content: center;
   padding: 2em;
   margin-top: 1em;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .page-2 .flex-info .item {
@@ -166,9 +172,23 @@ main p {
   text-align: center;
 }
 
-.page-2 .flex-info .item img {
-  margin-bottom: 1em;
+.page-2 .flex-info .item-1 {
+  flex: 1 1 0;
 }
+.page-2 .flex-info .item-2 {
+  flex: 1 1 0;
+}
+.page-2 .flex-info .item-3 {
+  flex: 1 1 0;
+}
+.page-2 .flex-info .item-4 {
+  flex: 1 1 0;
+}
+
+
+
+
+
 
 .page-3 {
   background-image: url("../assets/Images/Background-3-3.jpeg");
@@ -533,6 +553,10 @@ footer .social-links img {
 @media screen and (max-width: 480px) {
   main {
     object-fit: fill;
+  }
+
+  .nav-bar-top{
+    display: none;
   }
 
   nav ul {
