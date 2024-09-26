@@ -411,6 +411,12 @@ footer .text-content {
   max-width: 70%;
 }
 
+footer .text-content .location {
+  max-width: 300px;
+  display: flex;
+  align-items: baseline;
+}
+
 footer .text-content .opening {
   max-width: 200px;
   display: flex;
