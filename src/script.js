@@ -100,3 +100,16 @@ updateCarousel();
 // setInterval(nextSlide, 5000);
 
 console.log("Carousel initialized");
+
+const menuButton = document.getElementById("sidebar_menu");
+const closeButton = document.getElementById("close_menu");
+
+menuButton.addEventListener("click", () => {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "flex";
+});
+
+closeButton.addEventListener("click", () => {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "none";
+});
