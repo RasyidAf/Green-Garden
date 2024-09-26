@@ -1,0 +1,500 @@
+@font-face {
+  font-family: "House";
+  src: url("../assets/Fonts/SignPainter/SignPainter-HouseScript-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../assets/Fonts/Poppins/Poppins-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins-Regular";
+}
+
+button {
+  border: none;
+  padding: 7px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #31be6c;
+  gap: 0.5em;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+button img {
+  width: 20px;
+}
+
+button:hover {
+  background-color: #32965c;
+}
+
+.info h2 {
+  font-size: 3rem;
+  font-family: "House";
+  font-weight: 100;
+}
+
+.info p {
+  font-size: 1.2rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main {
+  background-image: url(../assets/Images/Background-1.png);
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  object-fit: cover;
+  background-color: #15161a5e;
+  background-blend-mode: overlay;
+}
+
+nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1em;
+  padding: 1em 5em;
+}
+
+nav li {
+  list-style-type: none;
+  height: 50px;
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+nav a {
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+main .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 80%;
+  gap: 1em;
+}
+
+main h1 {
+  font-family: "House";
+  font-size: 5.5rem;
+  font-weight: 200;
+}
+
+main p {
+  font-size: 1.5rem;
+}
+
+main button {
+  width: 290px;
+}
+
+.page-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 3em 1em;
+}
+
+.page-2 .flex-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  margin-top: 1em;
+}
+
+.page-2 .flex-info .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.page-2 .flex-info .item img {
+  margin-bottom: 1em;
+}
+
+.page-3 {
+  background-image: url("../assets/Images/Background-3-3.jpeg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65vh;
+  background-color: #15161aa2;
+  background-blend-mode: overlay;
+  color: white;
+  padding: 3em 1em;
+  position: relative;
+}
+
+.page-3 .info {
+  text-align: center;
+  max-width: 800px;
+  z-index: 1;
+}
+
+.custom-carousel {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.carousel-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+.carousel-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.carousel-text {
+  flex-grow: 1;
+}
+
+.carousel-text p {
+  background-color: #f0f0f05a;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.carousel-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-indicator:hover {
+  background-color: gray;
+}
+
+.carousel-indicator.active {
+  background-color: white;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 1em;
+  margin-bottom: 4em;
+}
+
+.service .gallery {
+  display: flex;
+  gap: 1.5em;
+  align-items: center;
+  padding: 1em;
+}
+
+.service .card {
+  border-color: #f0f0f0;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  width: 240px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card .card-info {
+  padding: 1em;
+  text-align: center;
+}
+
+.garden-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("../assets/Images/Background-2-2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 53vh;
+  background-color: rgb(63, 77, 77);
+  background-blend-mode: overlay;
+  color: white;
+  padding: 3em 1em;
+  position: relative;
+  z-index: 1;
+}
+
+.garden-1 .info {
+  margin-left: 6em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.garden-1 button {
+  margin-top: 1em;
+}
+
+.garden-1 .worker {
+  position: absolute;
+  bottom: -6px;
+  z-index: 2;
+  right: 15px;
+}
+
+.worker img {
+  width: auto;
+  object-fit: cover;
+  width: auto;
+  height: 400px;
+  transform: scaleX(-1);
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 1em;
+  background-color: #20323b;
+  color: white;
+  gap: 1em;
+}
+
+.project .picture {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  align-items: center;
+}
+
+.picture img {
+  width: 250px;
+  object-fit: cover;
+  height: 100%;
+}
+
+.project button {
+  margin-top: 1em;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 1em;
+}
+
+.pricing .content-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 3.5em;
+}
+
+.pricing .content-card .card-info {
+  background-color: #20323b;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing .content-card .card-info h3 {
+  border-bottom: 3px solid #20c997;
+  padding: 15px;
+  font-family: "House";
+  width: 100%;
+  font-size: 3rem;
+}
+
+.pricing .content-card .card-info .price {
+  font-size: 3rem;
+}
+
+.pricing .content-card .card-info .price sup {
+  font-size: 1.6rem;
+}
+
+.pricing .content-card .card-info .internal p {
+  line-height: 2;
+  padding: 0 2em 0 2em;
+}
+
+.pricing .content-card .card-info button {
+  margin: 1em 0 1.5em 0;
+}
+
+footer {
+  background-color: #20323b;
+  color: white;
+  position: relative;
+  padding: 0;
+}
+
+footer .content-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 4em;
+  padding: 2em 1em;
+  height: 330px;
+}
+
+footer .text-content {
+  display: flex;
+  gap: 2em;
+  max-width: 70%;
+}
+
+footer .text-content .opening {
+  max-width: 200px;
+  display: flex;
+  align-items: baseline;
+}
+
+footer .logo-info,
+.contact-us {
+  flex: 1;
+}
+
+footer .logo-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+footer .logo-info img {
+  width: 150px;
+  margin-bottom: 1em;
+}
+
+footer .logo-info a {
+  text-decoration: none;
+  color: #20c997;
+  font-weight: bold;
+}
+
+footer .contact-us h2 {
+  margin-bottom: 0.5em;
+}
+
+footer .contact-us p {
+  margin: 0.5em 0;
+  display: flex;
+  align-items: center;
+}
+
+footer .contact-us img {
+  margin-right: 0.5em;
+  width: 20px;
+}
+
+footer .worker-image {
+  position: absolute;
+  right: 2em;
+  bottom: 35px;
+  z-index: 2;
+}
+
+footer .worker-image img {
+  width: auto;
+  object-fit: cover;
+  max-width: 100%;
+  height: 400px;
+  z-index: 2;
+}
+
+footer .foot {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 0 3em;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #222c31;
+}
+
+footer .copyright {
+  font-size: 0.9em;
+}
+
+footer .social-links {
+  display: flex;
+  align-items: center;
+}
+
+footer .social-links a {
+  margin-left: 1em;
+}
+
+footer .social-links img {
+  width: 20px;
+}
+
+/* ["222C31","FFFFFF","20323B","31BE6C","20323B"]); */
