@@ -103,7 +103,7 @@ nav a {
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  display: block;
+  display: none;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -535,14 +535,19 @@ footer .social-links img {
     object-fit: fill;
   }
 
-  nav ul {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 1em;
-    padding: 1em 5em;
+  .desktop li {
+    display: none;
   }
+
+  .desktop li:last-child {
+    display: block;
+  }
+
+  .desktop {
+    width: 100%;
+    right: 0;
+  }
+
 
   nav li {
     list-style-type: none;
