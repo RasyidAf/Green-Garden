@@ -91,30 +91,26 @@ window.onload = function () {
     });
   }
 
-  function nextSlide() {
-    console.log("Moving to next slide");
-    currentSlide = (currentSlide + 1) % slides.length;
-    updateCarousel();
-  }
-
   createIndicators();
   updateCarousel();
-
-  // setInterval(nextSlide, 5000);
 
   console.log("Carousel initialized");
 
   const menuButton = document.getElementById("sidebar_menu");
   const closeButton = document.getElementById("close_menu");
 
-  menuButton.addEventListener("click", () => {
+  menuButton.addEventListener("click", (e) => {
     const sidebar = document.querySelector(".sidebar");
     sidebar.style.display = "flex";
+
+    e.preventDefault();
   });
 
-  closeButton.addEventListener("click", () => {
+  closeButton.addEventListener("click", (e) => {
     const sidebar = document.querySelector(".sidebar");
     sidebar.style.display = "none";
+
+    e.preventDefault();
   });
 
 };
