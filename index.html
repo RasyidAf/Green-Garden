@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Green Garden - Prepare your garden with our professional services. Grass cutting, planting, and seed providers." />
+    <meta property="og:title" content="Green Garden" />
+    <meta property="og:description" content="Professional gardening services." />
+    <meta property="og:image" content="./assets/Images/Logo-GG-w500.png" />
     <script src="./src/script.js" defer></script>
     <title>Green Garden</title>
     <link rel="stylesheet" href="./src/style.css" />
@@ -21,6 +25,7 @@
             <li><a href="#gallery">GALLERY</a></li>
             <li><a href="#blog">BLOG</a></li>
             <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#" id="darkModeToggleSidebar">🌙</a></li>
           </ul>
 
           <ul>
@@ -35,6 +40,7 @@
             <li><a href="#gallery">GALLERY</a></li>
             <li><a href="#blog">BLOG</a></li>
             <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#" id="darkModeToggle">🌙</a></li>
           </ul>
           <li class="menu-button" id="sidebar_menu"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#fff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </nav>
@@ -52,7 +58,7 @@
 
       <!-- Halaman About -->
       <section class="page-2" id="about">
-        <div class="info">
+        <div class="info reveal-up">
           <h2>Why Should We?</h2>
           <p>
             Because we believe you are our boss and we serve you with passion
@@ -60,25 +66,25 @@
         </div>
 
         <div class="flex-info">
-          <div class="item item-1">
+          <div class="item item-1 reveal-up">
             <img src="./assets/Images/Icon-star.png" alt="icon" />
             <h3>Good Reputation Since '89</h3>
             <p>vim no duis nulla prodesset, ad eos tale aliquid</p>
           </div>
 
-          <div class="item item-2">
+          <div class="item item-2 reveal-up">
             <img src="./assets/Images/Icon-legal-company.png" alt="icon" />
             <h3>Legal Company</h3>
             <p>vim no duis nulla prodesset, ad eos tale aliquid</p>
           </div>
 
-          <div class="item item-3">
+          <div class="item item-3 reveal-up">
             <img src="./assets/Images/Icon-award.png" alt="icon" />
             <h3>Focus On Quality</h3>
             <p>vim no duis nulla prodesset, ad eos tale'</p>
           </div>
 
-          <div class="item item-4">
+          <div class="item item-4 reveal-up">
             <img src="./assets/Images/Icon-good-price.png" alt="icon" />
             <h3>Good Price</h3>
             <p>vim no duis nulla prodesset, ad eos tale aliquid</p>
@@ -89,12 +95,12 @@
 
       <!-- Halaman Carousel -->
       <section class="page-3">
-        <div class="info">
+        <div class="info reveal-up">
           <h2>Our Best Boss</h2>
           <p>Our client is our boss who believe in us</p>
         </div>
 
-        <div id="customCarousel" class="custom-carousel">
+        <div id="customCarousel" class="custom-carousel reveal-up">
           <img
             id="carouselImage"
             src="./assets/Images/Client-1.jpeg"
@@ -120,7 +126,7 @@
 
       <!-- Halaman Service -->
       <section class="service" id="service">
-        <div class="info">
+        <div class="info reveal-up">
           <h2>Our Special Service</h2>
           <p>
             to give you a diferent think about garden, makes you feel
@@ -129,29 +135,29 @@
         </div>
 
         <div class="gallery">
-          <div class="card">
-            <img src="./assets/Images/Service-1.jpg" alt="" />
+          <div class="card reveal-up">
+            <img src="./assets/Images/Service-1.jpg" alt="Grass Cutting" loading="lazy" />
             <div class="card-info">
               <h3>Grass Cutting</h3>
               <p>Nonumy imperdiet percipitur at eam, te altera animal usu</p>
             </div>
           </div>
-          <div class="card">
-            <img src="./assets/Images/Service-5.jpeg" alt="" />
+          <div class="card reveal-up">
+            <img src="./assets/Images/Service-5.jpeg" alt="Planting" loading="lazy" />
             <div class="card-info">
               <h3>Planting</h3>
               <p>Nonumy imperdiet percipitur at eam, te altera animal usu</p>
             </div>
           </div>
-          <div class="card">
-            <img src="./assets/Images/Service-3.jpeg" alt="" />
+          <div class="card reveal-up">
+            <img src="./assets/Images/Service-3.jpeg" alt="Seed Provider" loading="lazy" />
             <div class="card-info">
               <h3>Seed Provider</h3>
               <p>Nonumy imperdiet percipitur at eam, te altera animal usu</p>
             </div>
           </div>
-          <div class="card">
-            <img src="./assets/Images/Service-4.jpeg" alt="" />
+          <div class="card reveal-up">
+            <img src="./assets/Images/Service-4.jpeg" alt="Prepare Land Garden" loading="lazy" />
             <div class="card-info">
               <h3>Prepare Land Garden</h3>
               <p>Nonumy imperdiet percipitur at eam, te altera animal usu</p>
@@ -163,7 +169,7 @@
 
       <!-- Halaman Garden - 1 -->
       <section class="garden-1" id="blog">
-        <div class="info">
+        <div class="info reveal-left">
           <h2>Lets make your garden Awesome!</h2>
           <p>With our professional we make wonderfull garden in your yard</p>
           <button type="button" class="btn btn-success btn-lg">
@@ -171,7 +177,7 @@
             <img src="./assets/Images/arrow-right.png" alt="" />
           </button>
         </div>
-        <div class="worker">
+        <div class="worker reveal-right">
           <img src="./assets/Images/worker2.png" alt="" />
         </div>
       </section>
@@ -179,22 +185,22 @@
 
       <!-- Halaman Recent Project -->
       <section class="project" id="gallery">
-        <div class="info">
+        <div class="info reveal-up">
           <h2>Recent Project</h2>
           <p>We serve with integrity and detail</p>
         </div>
 
         <div class="picture">
-          <img src="./assets/Images/Project-4.jpeg" alt="" />
+          <img src="./assets/Images/Project-4.jpeg" alt="Recent Project 1" class="reveal-up" loading="lazy" />
 
-          <img src="./assets/Images/Project-1.jpeg" alt="" />
+          <img src="./assets/Images/Project-1.jpeg" alt="Recent Project 2" class="reveal-up" loading="lazy" />
 
-          <img src="./assets/Images/Project-3.jpeg" alt="" />
+          <img src="./assets/Images/Project-3.jpeg" alt="Recent Project 3" class="reveal-up" loading="lazy" />
 
-          <img src="./assets/Images/Project-2.jpeg" alt="" />
+          <img src="./assets/Images/Project-2.jpeg" alt="Recent Project 4" class="reveal-up" loading="lazy" />
         </div>
 
-        <button type="button" class="btn btn-success btn-lg">
+        <button type="button" class="btn btn-success btn-lg reveal-up">
           More Project
           <img src="./assets/Images/arrow-right.png" alt="" />
         </button>
@@ -203,13 +209,13 @@
 
       <!-- Halaman Pricing Guide -->
       <section class="pricing">
-        <div class="info">
+        <div class="info reveal-up">
           <h2>Pricing Guide</h2>
           <p>Choose your pricing plan and we will make your garden beauty</p>
         </div>
 
         <div class="content-card">
-          <div class="card-info">
+          <div class="card-info reveal-up">
             <h3>Basic</h3>
             <div class="internal">
               <p class="price"><sup>$</sup>10<sup>68</sup></p>
@@ -225,7 +231,7 @@
             </button>
           </div>
 
-          <div class="card-info">
+          <div class="card-info reveal-up">
             <h3>Standart</h3>
             <div class="internal">
               <p class="price"><sup>$</sup>23<sup>83</sup></p>
@@ -241,7 +247,7 @@
             </button>
           </div>
 
-          <div class="card-info">
+          <div class="card-info reveal-up">
             <h3>Premium</h3>
             <div class="internal">
               <p class="price"><sup>$</sup>47<sup>98</sup></p>
@@ -263,7 +269,7 @@
       <!-- Halaman Footer -->
       <footer id="contact">
         <div class="content-footer">
-          <div class="text-content">
+          <div class="text-content reveal-left">
             <div class="logo-info">
               <img
                 src="./assets/Images/Logo-GG-w200.png"
@@ -310,7 +316,7 @@
             </div>
           </div>
 
-          <div class="worker-image">
+          <div class="worker-image reveal-right">
             <img src="./assets/Images/worker4.png" alt="Gardener" />
           </div>
         </div>
@@ -350,5 +356,10 @@
       </footer>
       <!-- Akhir Halaman Footer -->
     </div>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Go to top">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg>
+    </button>
   </body>
 </html>
